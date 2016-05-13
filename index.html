@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 Video Player</title>
+	
+	<link rel="stylesheet" type="text/css" href="styles/player.css">
+</head>
+<body>
+	
+	<div class="v-player">
+		
+		<div id="video-container" class="v-player__video-container">
+			<div id="screen" class="v-player__screen">
+				<img src="images/play.png" id="screen-button">
+			</div>
+			
+			<video id="video" poster="images/thumbnail.png">
+				<source src="video/sample.ogv">
+				<source src="video/sample.mp4">
+				
+				<p>Your browser doesn't support the HTML5 video player.</p>
+				<p>Please consider updating it to the latest version.</p>
+			</video>
+		</div>
+		
+		<div id="progressbar-container" class="v-player__progressbar-container">
+			<div id="progressbar" class="v-player__progressbar">
+				
+			</div>
+		</div>
+		
+		<div id="buttons-container" class="v-player__buttons-container">
+			<img id="play-button" class="v-player__play-button" src="images/play.png">
+			
+			<div id="time-field" class="v-player__time-field">
+				0:00 / 0:00
+			</div>
+			
+			<img id="sound-button" class="v-player__sound-button" src="images/sound.png">
+			
+			<div id="soundbar-container" class="v-player__soundbar-container">
+				<div id="soundbar" class="v-player__soundbar"></div>
+			</div>
+			
+			<img id="fullscreen-button" class="v-player__fullscreen-button" src="images/fullscreen.png">
+		</div>
+		
+	</div>
+
+	<script src="scripts/player.min.js"></script>
+	<script>
+		var player = new Player();
+	</script>
+</body>
+</html>

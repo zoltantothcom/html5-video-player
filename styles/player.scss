@@ -1,0 +1,131 @@
+//
+//  Variables
+//
+$lightBlue: rgb(50, 170, 220);
+$lightGray: rgb(70, 70, 70);
+$darkGray: rgb(30, 30, 30);
+
+//
+//  Player Component
+//
+.v-player {
+    background: $darkGray;
+    display: inline-block;
+    user-select: none;
+    
+    img {
+        background: $lightGray;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: $lightBlue;
+            transform: scale(.95);
+        }
+    }
+    
+    video {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+//
+//  Player Container
+//
+.v-player__video-container {
+    height: 360px;
+    position: relative;
+    width: 640px;
+}
+
+.v-player__screen {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    
+    img {
+        margin: auto;
+        position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+        transition: all .2s ease-in-out;
+    }
+}
+
+//
+//  Progress Bar
+//
+.v-player__progressbar-container {
+    background-color: $lightGray;
+    cursor: pointer;
+    margin-top: 2px;
+    padding-bottom: 2px;
+}
+
+.v-player__progressbar {
+    background-color: $lightBlue;
+    height: 5px;
+    width: 0%;
+}
+
+//
+//  Buttons Container
+//
+.v-player__buttons-container {
+    height: 50px;
+    overflow: hidden;
+}
+
+.v-player__buttons-container > * {
+    display: inline-block;
+    height: 100%;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+//  Button: Play
+//
+.v-player__play-button {
+    transition: all .2s ease-in-out;
+}
+
+//  Timer: Elapsed and Total
+//
+.v-player__time-field {
+    color: $lightBlue;
+    cursor: default;
+    line-height: 50px;
+}
+
+//  Button: Mute
+//
+.v-player__sound-button {
+    margin-right: 0;
+    transition: all .2s ease-in-out;
+}
+
+//  Sound Bar
+//
+.v-player__soundbar-container {
+    background: $lightGray;
+    cursor: pointer;
+    height: 5px;
+    margin-left: 0;
+    width: 100px;
+}
+
+.v-player__soundbar {
+    background: $lightBlue;
+    height: 100%;
+    width: 100%;
+}
+
+//  Button: Fullscreen
+//
+.v-player__fullscreen-button {
+    float: right;
+    transition: all .2s ease-in-out;
+}

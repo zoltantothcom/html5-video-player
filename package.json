@@ -1,0 +1,25 @@
+{
+    "name": "html5-video-player",
+    "version": "1.0.0",
+    "description": "A basic HTML5 player for videos.",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "gulp": "^3.9.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-autoprefixer": "^3.1.0",
+        "gulp-postcss": "^6.1.1",
+        "gulp-sass": "^2.3.1",
+        "gulp-uglify": "^1.5.3"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "html5",
+        "video",
+        "player"
+    ],
+    "author": "Zoltan Toth",
+    "license": "Unlicense"
+}
